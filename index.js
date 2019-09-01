@@ -10,9 +10,11 @@ $(document).ready(function () {
         e.preventDefault();
         $('.header .menu').toggleClass('is-expanded');
         $('.menu-content').css('display') == 'none' ? $('.menu-content').fadeIn() : $('.menu-content').fadeOut();
+        $('.container').fadeOut();
         setTimeout(() => {
             $('.container').toggleClass('menu-open');
-        }, 400);
+            $('.container').fadeIn();
+        }, 500);
     });
 
     $('.footer .info').click(function (e) {
