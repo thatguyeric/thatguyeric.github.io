@@ -103,7 +103,7 @@ function displayBooks(books) {
 function getBibleVerses(book) {
     console.log(book);
     $.ajax({
-        url: 'http://getbible.net/json',
+        url: 'https://getbible.net/json',
         dataType: 'jsonp',
         data: 'p=' + book,
         jsonp: 'getbible',
