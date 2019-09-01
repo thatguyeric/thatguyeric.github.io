@@ -4,14 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Test App</title>
-    <link rel="stylesheet" type="text/css" href="./app.css" />
+    <title>Bible Studies</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./lib/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./lib/app.css" />
   </head>
   <body>
-    <header></header>
-    <div class="container">
-      <div class="content">Hello</div>
+    <div class="header">
+      <a class="logo"></a>
+      <h1>Bible Studies</h1>
+      <div class="menu"></div>
+      <div class="menu-content">
+        <div class="menu-content_inner">
+          <label for="books">Books</label>
+          <ul id="books"></ul>
+        </div>
+      </div>
     </div>
-    <footer></footer>
+    <div class="container">
+      <div class="main-content">Welcome.</div>
+    </div>
+    <div class="footer">
+      <div class="logo inverted"></div>
+      <div class="info">
+        Contact Us
+      </div>
+      <div class="info-content">
+        Eric Marcondes <br />
+        cell: <a href="tel:818.331.1326">818.331.1326</a> <br />
+        email: <a href="mailto:eric@marcondes.me">eric@marcondes.me</a>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="contact-us-container">
+      <div class="contact-us">
+        <div class="contact-us-close"></div>
+        <div class="contact-us-content">
+          <h2>Contact Us</h2>
+          <form id="contact-us-form">
+            <label for="name">Name</label>
+            <input
+              class="input"
+              type="text"
+              name="contact-us"
+              id="name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              class="input"
+              type="text"
+              name="contact-us"
+              id="email"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea class="input" id="message" rows="10" cols="50"></textarea>
+            <input class="submit" type="submit" />
+          </form>
+        </div>
+      </div>
+      <div class="contact-us-backdrop"></div>
+    </div>
   </body>
 </html>

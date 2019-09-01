@@ -1,0 +1,223 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  background-color: offwhite;
+  padding: 2%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 2px 3px lightgrey;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 20px;
+}
+
+.header .logo:hover {
+  cursor: pointer;
+  /* box-shadow: 1px 0px 3px inset grey; */
+}
+
+.header .menu {
+  height: 30px;
+  margin: 0 2vw;
+  content: url(../images/hamburger-menu.png);
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: all 0.4s ease;
+  order: 3;
+}
+
+.header .menu-content {
+  display: none;
+  position: absolute;
+  height: calc(100vh - 60px - 80px);
+  width: 250px;
+  /* background-color: rgb(0, 0, 0, 0.1); */
+  right: 0;
+  top: 60px;
+  text-align: left;
+  box-shadow: 2px 0 5px grey inset;
+}
+
+.header .menu-content_inner {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.menu-content_inner li {
+  padding: 5px 0;
+}
+
+.menu-content_inner label {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+.header h1 {
+  order: 2;
+}
+
+.is-expanded {
+  transform: rotate(90deg);
+  right: 200px;
+}
+
+.logo {
+  content: url(../images/logo.svg);
+  width: 40px;
+  margin: 0 2vw;
+}
+
+.inverted {
+  filter: invert(1);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  color: white;
+  line-height: 18px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.footer .info {
+  order: 2;
+  margin-left: auto;
+  margin-right: 2vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  cursor: pointer;
+}
+
+.info-content {
+  position: absolute;
+  bottom: 70px;
+  display: none;
+  right: 50px;
+  background-color: white;
+  color: black;
+  padding: 20px 20px 5px 20px;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+}
+
+.info-content div {
+  position: relative;
+  top: 20px;
+  left: 165px;
+  width: 0;
+  height: 0;
+  border-left: 23px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+}
+
+.info:hover + .info-content {
+  display: block;
+}
+
+.info-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.info-content a:hover {
+  color: rgb(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.contact-us-container .contact-us {
+  background-color: white;
+  box-shadow: 1px 2px 3px grey;
+  z-index: 100;
+  position: relative;
+  margin: auto;
+  height: max-content;
+  width: 500px;
+  transition: all 0.4s ease;
+}
+
+.contact-us-container {
+  display: flex;
+  flex-direction: row;
+  display: none;
+  padding: 40px;
+}
+
+.contact-us .contact-us-close {
+  content: url(../images/close.svg);
+  height: 15px;
+  width: 15px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.contact-us-container .contact-us-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.contact-us-container .contact-us-content {
+  margin: 20px 70px;
+}
+
+.input {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+.submit {
+  width: 30%;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: auto;
+  color: black;
+  padding: 5px 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  box-shadow: 1px 1px 3px grey inset;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+form #message {
+  height: 100px;
+}
