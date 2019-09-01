@@ -4,30 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bible Studies</title>
+    <title>Biblical Readings</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./index.js"></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./lib/bootstrap-grid.min.css"
-    />
     <link rel="stylesheet" type="text/css" href="./lib/app.css" />
   </head>
   <body>
     <div class="header">
       <a class="logo"></a>
-      <h1>Bible Studies</h1>
+      <h1>Biblical Readings</h1>
       <div class="menu"></div>
-      <div class="menu-content">
-        <div class="menu-content_inner">
-          <label for="books">Books</label>
-          <ul id="books"></ul>
-        </div>
-      </div>
     </div>
     <div class="container">
-      <div class="main-content">Welcome.</div>
+      <div class="main-content" id="scripture"></div>
+    </div>
+    <div class="menu-content">
+      <div class="menu-content_inner">
+        <label for="books">Books</label>
+        <ul id="books"></ul>
+      </div>
     </div>
     <div class="footer">
       <div class="logo inverted"></div>
@@ -70,7 +65,6 @@
           </form>
         </div>
       </div>
-      <div class="contact-us-backdrop"></div>
     </div>
   </body>
 </html>
