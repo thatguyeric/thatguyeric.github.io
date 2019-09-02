@@ -101,9 +101,10 @@ function displayBooks(books) {
 }
 
 function getBibleVerses(book) {
+    // TODO: hit api directly. dont use ajax
     console.log(book);
     $.ajax({
-        url: 'https://getbible.net/json',
+        url: 'http://getbible.net/json',
         dataType: 'jsonp',
         data: 'p=' + book,
         jsonp: 'getbible',
